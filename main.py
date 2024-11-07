@@ -634,8 +634,8 @@ async def auto_raid(server_id):
 
 
 get_latest_release_version(repo_owner, repo_name)
-bot_token = input((Colorate.Color(Colors.blue, "Enter Bot Token: ")))
-server_id = input((Colorate.Color(Colors.blue, "Enter Server ID: ")))
+bot_token = input((Colorate.Color(Colors.blue, "Enter Bot Token Here: ")))
+server_id = input((Colorate.Color(Colors.blue, "Enter Server ID Here: ")))
 
 intents = discord.Intents.all()  
 bot = commands.Bot(command_prefix='!', intents=intents)
@@ -643,7 +643,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print((Colorate.Color(Colors.blue, f'[+] {bot.user.name} is online!')))
-    print((Colorate.Color(Colors.blue, f'[+] Server ID: {server_id}')))
+    print((Colorate.Color(Colors.blue, f'[+] Enter Server ID Here: {server_id}')))
 
     server = bot.get_guild(int(server_id))
     if server:

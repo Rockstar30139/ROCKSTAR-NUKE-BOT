@@ -18,7 +18,7 @@ SERVER_CONFIG = {
 }
 
 WEBHOOK_CONFIG = {
-    "default_name": "Nebula",  # Webhook Name here 
+    "default_name": "Rockstar",  # Webhook Name here 
 }
 
 
@@ -38,5 +38,5 @@ NO_BAN_KICK_ID = {
 
 BOT_PRESENCE = {
     "type": "playing",  # "playing", "listening", or "watching"
-    "text": "Nebula"  # Your text presence
+    "text": "Rockstar"  # Your text presence
 }
